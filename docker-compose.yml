@@ -3,7 +3,7 @@ services:
   flash:
     build:
       context: ""
-    image: ubuntu-device-flash:latest
+    image: zazabe/ubuntu-device-flash:latest
     volumes:
     - .:/root
     - /dev/bus/usb:/dev/bus/usb
