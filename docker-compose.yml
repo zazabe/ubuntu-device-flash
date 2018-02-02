@@ -1,0 +1,11 @@
+version: '3.4'
+services:
+  flash:
+    build:
+      context: ""
+    image: ubuntu-device-flash:latest
+    volumes:
+    - .:/root
+    - /dev/bus/usb:/dev/bus/usb
+    privileged: true
+    command: bash
